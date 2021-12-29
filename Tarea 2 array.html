@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		var num = [12, 34, 65, 23342, 4332, 543, 7];		
+		var m = 0;
+		for ( i = 0; i <= num.length; i++) {
+			if (num[i] > m) {
+				m = num[i];
+			}
+		}
+
+        document.write('el numero mayor es ' + m);
+
+        // AYUDAMEMORIA: 
+        
+        // Establezco la variable array (num) con sus valores, y una variable que me va a servir para comparar (m) y le asigno un valor (en este caso 0 xq quiero que la var m se modifique al primer valor mas grande con el que se compara).
+        
+        // Luego utilizo la estructura for para que lea y me recorra los valores del array (comenzando desde la posicion 0 (i=0), como condicion que la lectura no se pase del largo del array (i<= num.length), y que cada vez que lea una posicion, esta pase a la posicion siguiente de uno en uno (i++)).
+
+        // Entonces establezco una estructura de control que me compare cada valor del array num, con el valor de m. Para eso voy a utilizar la estructura if y pongo como condicion que si el valor dentro del array num (num[i]), es mayor al valor de mi variable m, entonces el valor de la variable m sea igual al valor del elemento del array con el que se comparó.
+
+        // Con esto entonces, comenzando desde la posicion del array 0 (porque puse en la estructura for que comience la lectura desde la posicion i='0'), se va a comparar el valor de m con el primer valor del array. Si este valor es mayor que el valor de m (por supuesto xq a "m" le puse valor=0), ahora el valor de m es igual al valor del primer elemento del array (en este caso es 12).
+
+        // entonces va a pasar la lectura al segundo elemento del array (xq puse i++) que ahora está en la posicion 1, y lo va a comparar con el nuevo valor de "m". Si el valor del elemento en la posicion 1 del array, es mayor al nuevo valor de m, el valor de m se va a modificar y va a ser = al valor del elemento en la posicion 1 y despues, va a pasar a comparar el elemento en la posicion 2.
+
+        // Si resulta que el valor del elemento en la posicion 1 del array, NO es mayor al nuevo valor de m, directamente se pasa a comparar con el valor del elemento en la posicion 2. 
+
+        // Esto va a seguir repitiendoce hasta que se alcance la longitud del array (i<= num.length).
+
+        // Por ultimo cuando no haya más valores que comparar, el valor de m va a ser = al valor mas grande del elemento dentro del array. Lo unico que faltaria es pedir que me muestre ese valor haciendo un document.write(m).
+
+		
+ 
+    </script>
+</body>
+</html>

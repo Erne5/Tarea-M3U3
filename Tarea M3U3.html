@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea M3U3</title>
+</head>
+<body>
+    <h2><script>
+        var distancia;
+
+    distancia=prompt('ingrese la distancia a recorrer en metros: ','');
+    if (distancia>=0 && distancia<=1000){
+        document.write('puede recorrer esa distancia a pie.');
+    } else if(distancia>1000 && distancia<=10000){
+            document.write('es mejor recorrer esa distancia en bicicleta.');
+    } else if(distancia>10000 && distancia<=30000){
+            document.write('Le recomendamos que recorra esa distancia en colectivo.');
+          } else if (distancia>30000 && distancia<=100000){
+              document.write('es mejor hacer el recorrido en auto.');
+          } else{
+              document.write('mejor comprese unos pasajes de avión.');
+          }
+    </script></h2>
+    
+</body>
+</html>
